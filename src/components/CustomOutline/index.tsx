@@ -1,0 +1,34 @@
+import React from 'react';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+
+type Props = {
+    title: string;
+    onPress?: () => void; 
+};
+
+export default function CustomOutline({ title, onPress }: Props) {
+    return (
+        <TouchableOpacity style={styles.button} onPress={onPress}>
+            <Text style={styles.text}>{title}</Text>
+        </TouchableOpacity>
+    );
+}
+
+const styles = StyleSheet.create({
+    button: {
+        borderWidth: 2,
+        borderColor: '#2A89C7',
+        paddingVertical: 12,
+        width: '100%',
+        maxWidth: 400, 
+        borderRadius: 5,
+        alignItems: 'center', 
+        alignSelf: 'center', 
+        marginTop: 10,
+    },
+    text: {
+        color: '#2A89C7',
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+});
