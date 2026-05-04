@@ -54,7 +54,7 @@ export default function ExchangePoints() {
         <View style={styles.container}>
             {/* CABEÇALHO */}
 <View style={styles.header}>
-                <Text style={styles.title}>Rede ReUse! ABC</Text>
+                <Text style={styles.title}>Rede ReUse!</Text>
                 <Text style={styles.subtitle}>Encontre bazares e pontos de doação</Text>
             </View>
 
@@ -77,7 +77,7 @@ export default function ExchangePoints() {
                         <TouchableOpacity 
                             key={point.id} 
                             style={[styles.pointCard, isSelected && styles.selectedCard]}
-                            onPress={() => setSelectedPoint(point)} // 5. O CLIQUE MUDA O MAPA AQUI
+                            onPress={() => setSelectedPoint(point)} 
                         >
                             <View style={[styles.dot, isSelected && styles.selectedDot]} />
                             <View>
