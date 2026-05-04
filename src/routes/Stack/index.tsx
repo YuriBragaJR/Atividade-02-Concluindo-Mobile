@@ -1,4 +1,3 @@
-// src/routes/Stack/index.tsx
 import React, { useContext } from "react";
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import { AuthContext } from "../../contexts/AuthContext";
